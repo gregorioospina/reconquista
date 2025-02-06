@@ -1,0 +1,28 @@
+{
+	"activities": [
+		{
+			"date": "Jueves 31 de agosto",
+			"name": "Museo del Oro 1 ",
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"link": ""
+		},
+		{
+			"date": "Jueves 31 de agosto",
+			"name": "Museo del Oro 2",
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"link": ""
+		},
+		{
+			"date": "Jueves 31 de agosto",
+			"name": "Museo del Oro 3",
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"link": ""
+		},
+		{
+			"date": "Jueves 31 de agosto",
+			"name": "Museo del Oro 4",
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"link": ""
+		}
+	]
+}
