@@ -32,7 +32,7 @@ const Menu = ({ open, close }: IMenu) => {
 						<Link href={"/"}>RSVP</Link>
 					</li>
 					<li>
-						<Link href={"/"}>Viaja por Colombia</Link>
+						<Link href={"/colombia"}>Viaja por Colombia</Link>
 					</li>
 					<li>
 						<Link href={"/bogota"}>Estadia en Bogota</Link>

@@ -1,13 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import Header from "../components/header";
-import Menu from "../components/menu";
 import Title from "../components/title";
 
 export default function GiftList() {
-	const [openMenu, setOpenMenu] = useState<boolean>(false);
-
 	return (
 		<div
 			id="scrolling-container"
@@ -35,7 +31,6 @@ export default function GiftList() {
 					<Image src={"/assets/images/thai.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>
-			<Menu open={openMenu} close={() => setOpenMenu(false)} />
 		</div>
 	);
 }

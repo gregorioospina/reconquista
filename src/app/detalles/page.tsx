@@ -1,13 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import Header from "../components/header";
-import Menu from "../components/menu";
 import Title from "../components/title";
 
 export default function Details() {
-	const [openMenu, setOpenMenu] = useState<boolean>(false);
-
 	return (
 		<div
 			id="scrolling-container"
@@ -59,7 +55,6 @@ export default function Details() {
 					<button className="underline font-highlights font-light">necesito transporte</button>
 				</div>
 			</main>
-			<Menu open={openMenu} close={() => setOpenMenu(false)} />
 		</div>
 	);
 }

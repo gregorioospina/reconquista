@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import Header from "../components/header";
-import Menu from "../components/menu";
 import Title from "../components/title";
-import { activities } from "./activities.json";
+import activities from "./activities.json";
 
 export default function Bogota() {
-	const [openMenu, setOpenMenu] = useState<boolean>(false);
-
 	return (
 		<div
 			id="scrolling-container"
@@ -37,7 +33,7 @@ export default function Bogota() {
 					<p className="font-title text-3xl md:text-4xl mb-2">Actividades en Bogotá</p>
 
 					<div className="flex md:flex-col md:gap-y-4 lg:grid lg:grid-cols-2 lg:gap-x-4">
-						{activities.map((a) => (
+						{activities.activities.map((a) => (
 							<div key={a.name} className="border rounded-2xl h-[220px] max-w-[500px] p-7 flex flex-col justify-between">
 								<div className="flex flex-col">
 									<p className="uppercase font-body font-light text-xs md:text-sm">{a.date}</p>
@@ -56,7 +52,6 @@ export default function Bogota() {
 					<Image src={"/assets/images/cart.png"} alt="cart" fill className="object-contain" />
 				</div>
 			</main>
-			<Menu open={openMenu} close={() => setOpenMenu(false)} />
 		</div>
 	);
 }
