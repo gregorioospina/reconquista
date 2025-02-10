@@ -12,7 +12,9 @@ export default function Home() {
 			className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 			<main className="flex flex-col gap-8 row-start-2 items-center sm:items-start px-5 md:px-[25svw]">
 				<div className="h-[70svh] relative max-w-[500px] w-[90svw] md:w-[80svw]">
-					<p className="mx-5 relative font-title text-8xl md:text-9xl mt-5 z-10 text-background">Álvaro & Maria Camila</p>
+					<p className="mx-5 relative font-title text-8xl md:text-9xl mt-5 z-10 whitespace-break-spaces text-background">
+						Álvaro{"\n"}&{"\n"}María Camila
+					</p>
 					<Image className="object-fill z-[9]" src={"/assets/images/cover.png"} fill alt="cover"></Image>
 				</div>
 				<div className="flex justify-center w-full">
