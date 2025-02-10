@@ -15,7 +15,7 @@ export default function Details() {
 					<Title lineSrc="./assets/images/line-g.svg" yOffset={-17} title="Detalles" />
 				</div>
 				<div className="h-[60svh] relative w-full mt-[-120px] mb-[-100px] md:mb-[-80px]">
-					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
+					<Image src={"/assets/images/wed.png"} alt="detalles" fill className="object-contain" />
 				</div>
 				<div className="flex flex-col z-10">
 					<p className="uppercase font-body font-light text-xs md:text-sm">Sábado 2 de agosto</p>
