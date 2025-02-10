@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../components/header";
 import Title from "../components/title";
 
@@ -13,8 +14,8 @@ export default function Details() {
 				<div className="flex flex-col justify-start">
 					<Title lineSrc="./assets/images/line-g.svg" yOffset={-17} title="Detalles" />
 				</div>
-				<div className="h-[60svh] relative w-full mt-[-120px] mb-[-90px] md:mb-[-100px]">
-					<Image src={"/assets/images/wed.png"} alt="detalles" fill className="object-contain" />
+				<div className="h-[60svh] relative w-full mt-[-120px] mb-[-100px] md:mb-[-80px]">
+					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
 				</div>
 				<div className="flex flex-col z-10">
 					<p className="uppercase font-body font-light text-xs md:text-sm">Sábado 2 de agosto</p>
@@ -29,8 +30,12 @@ export default function Details() {
 				</div>
 
 				<div className="mt-1 flex flex-col gap-y-3 items-start">
-					<button className="underline text-sm md:text-base font-highlights font-light">confirmar</button>
-					<button className="underline text-sm md:text-base font-highlights font-light">¿cómo llegar?</button>
+					<Link href={"/rsvp"} className="underline font-highlights text-sm md:text-base font-light">
+						confirmar
+					</Link>
+					<Link target="__blank" href={"https://maps.app.goo.gl/zY5o6rhzao82kfDG6"} className="underline font-highlights text-sm md:text-base font-light">
+						¿cómo llegar?
+					</Link>
 					<button className="underline text-sm md:text-base font-highlights font-light">necesito transporte</button>
 				</div>
 				<div className="w-full h-8 relative my-4">
@@ -49,11 +54,15 @@ export default function Details() {
 				</div>
 
 				<div className="mt-1 z-10 flex flex-col gap-y-3 items-start">
-					<button className="underline font-highlights text-sm md:text-base font-light">confirmar</button>
-					<button className="underline font-highlights text-sm md:text-base font-light">¿cómo llegar?</button>
+					<Link href={"/rsvp"} className="underline font-highlights text-sm md:text-base font-light">
+						confirmar
+					</Link>
+					<Link target="__blank" href={"https://maps.app.goo.gl/2rrZMNUZ7HhrAUrAA"} className="underline font-highlights text-sm md:text-base font-light">
+						¿cómo llegar?
+					</Link>
 					<button className="underline font-highlights text-sm md:text-base font-light">necesito transporte</button>
 				</div>
-				<div className="h-[60svh] mt-[-130px] relative w-full ">
+				<div className="h-[60svh] mt-[-80px] relative w-full ">
 					<Image src={"/assets/images/picoteo-1.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>
