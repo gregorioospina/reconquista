@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import Menu from "./menu";
 
@@ -26,11 +27,15 @@ const Header = (props: IHeader) => {
 	useEffect(() => {}, []);
 
 	return (
-		<div className="fixed top-0 left-0 right-0 border-b p-3 md:p-3 pl-5 md:pl-10 border-gray-100 z-50 bg-background md:bg-transparent md:border-none flex justify-between">
+		<div className="fixed top-0 left-0 right-0 border-b p-3 md:p-3 md:pr-10 pr-5 pl-5 md:pl-10 border-gray-100 z-50 bg-background md:bg-transparent md:border-none flex justify-between">
 			<p className="font-title text-lg md:text-2xl">
 				MC<span className={[andColor, "mx-2 font-bold"].join(" ")}>&</span>A
 			</p>
-			{props.menu && <button onClick={() => setOpenMenu(true)}>=</button>}
+			{props.menu && (
+				<button onClick={() => setOpenMenu(true)}>
+					<Image src={"./assets/images/menu-icon.svg"} alt="menu icon" height={20} width={20} />
+				</button>
+			)}
 			<Menu open={openMenu} close={() => setOpenMenu(false)} />
 		</div>
 	);
