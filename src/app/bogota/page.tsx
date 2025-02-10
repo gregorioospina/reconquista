@@ -9,7 +9,7 @@ export default function Bogota() {
 		<div
 			id="scrolling-container"
 			className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
-			<main className="flex flex-col gap-8 row-start-2 justify-start px-[25svw]">
+			<main className="flex flex-col gap-8  max-w-[100svw] w-full row-start-2 justify-start px-5 md:px-[25svw]">
 				<Header menu color="red" />
 				<div className="flex flex-col justify-start">
 					<Title lineSrc="./assets/images/line-r.svg" yOffset={-10} title={`Estadía en\nBogotá`} />
@@ -32,9 +32,9 @@ export default function Bogota() {
 				<div className="">
 					<p className="font-title text-3xl md:text-4xl mb-2">Actividades en Bogotá</p>
 
-					<div className="flex md:flex-col md:gap-y-4 lg:grid lg:grid-cols-2 lg:gap-x-4">
+					<div className="flex md:gap-y-4 lg:grid lg:grid-cols-2 mt-4 gap-x-6 mx-[-20px] px-5 overflow-x-auto lg:gap-x-4">
 						{activities.activities.map((a) => (
-							<div key={a.name} className="border rounded-2xl h-[220px] max-w-[500px] p-7 flex flex-col justify-between">
+							<div key={a.name} className="border  bg-background z-10 min-w-[80svw] rounded-2xl h-[220px] max-w-[500px] p-7 flex flex-col justify-between">
 								<div className="flex flex-col">
 									<p className="uppercase font-body font-light text-xs md:text-sm">{a.date}</p>
 									<p className="font-title text-xl md:text-2xl">{a.name}</p>
@@ -48,7 +48,7 @@ export default function Bogota() {
 					</div>
 				</div>
 
-				<div className="h-[60svh] relative w-full mt-[-20px]">
+				<div className="h-[60svh] relative w-full mt-[-170px] md:mt-[-20px]">
 					<Image src={"/assets/images/cart.png"} alt="cart" fill className="object-contain" />
 				</div>
 			</main>

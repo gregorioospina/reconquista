@@ -8,7 +8,7 @@ export default function GiftList() {
 		<div
 			id="scrolling-container"
 			className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
-			<main className="flex flex-col gap-8 row-start-2 justify-start px-[25svw]">
+			<main className="flex flex-col gap-8 row-start-2 justify-start px-5 md:px-[25svw]">
 				<Header menu color="blue" />
 				<div className="flex flex-col justify-start">
 					<Title lineSrc="./assets/images/line-b.svg" yOffset={-10} title={`Lista de\nRegalos`} />
