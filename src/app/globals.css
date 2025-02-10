@@ -4,6 +4,7 @@
 
 :root {
   --background: rgb(255, 251, 243);
+  --background-menu: rgba(255, 251, 243, 0.578);
   --foreground: rgb(42, 45, 52);
   --yellow-h: rgb(235, 206, 63);
   --green-h: rgb(9, 124, 62);

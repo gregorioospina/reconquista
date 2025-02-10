@@ -15,7 +15,7 @@ const Menu = ({ open, close }: IMenu) => {
 		<div
 			className={[
 				open ? "top-0" : "top-[100%]",
-				"fixed z-40 flex left-0 justify-center items-center overflow-hidden transition-all right-0 bottom-0 backdrop-blur-lg bg-background",
+				"fixed z-40 flex left-0 justify-center items-center overflow-hidden transition-all right-0 bottom-0 backdrop-blur-lg bg-background-menu",
 			].join(" ")}>
 			<button className="fixed top-10 right-10" onClick={handleClose}>
 				<Image src={"./assets/images/close-icon.svg"} alt="menu icon" height={20} width={20} />

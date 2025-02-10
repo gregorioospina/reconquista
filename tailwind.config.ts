@@ -12,6 +12,7 @@ export default {
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
+				"background-menu": "var(--background-menu)",
 				"rc-yellow": "var(--yellow-h)",
 				"rc-green": "var(--green-h)",
 				"rc-blue": "var(--blue-h)",
