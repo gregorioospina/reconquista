@@ -34,11 +34,13 @@ export default function Bogota() {
 
 					<div className="flex md:gap-y-4 lg:grid lg:grid-cols-2 mt-4 gap-x-6 mx-[-20px] px-5 overflow-x-auto lg:gap-x-4">
 						{activities.activities.map((a) => (
-							<div key={a.name} className="border  bg-background z-10 min-w-[80svw] rounded-2xl h-[220px] max-w-[500px] p-7 flex flex-col justify-between">
+							<div
+								key={a.name}
+								className="border  bg-background z-10 min-w-[80svw] md:min-w-fit rounded-2xl h-[220px] max-w-[500px] p-7 flex flex-col justify-between">
 								<div className="flex flex-col">
 									<p className="uppercase font-body font-light text-xs md:text-sm">{a.date}</p>
 									<p className="font-title text-xl md:text-2xl">{a.name}</p>
-									<p className="font-body md:text-sm md:leading-5 leading-3 text-sm text-justify">{a.description}</p>
+									<p className="font-body md:text-sm md:leading-4 leading-3 text-sm text-justify">{a.description}</p>
 								</div>
 								<div className="flex justify-start">
 									<button className="underline font-highlights text-sm font-light">quiero reservar</button>
