@@ -32,6 +32,14 @@ export default function RSVP() {
 						</select>
 					</div>
 					<div className="flex flex-col">
+						<p className="font-highlights font-light">Necesito transporte para el matrimonio</p>
+						<select className="w-full px-3 h-10 border rounded-md bg-background ">
+							<option>No</option>
+							<option>Si</option>
+						</select>
+						<p className="font-body text-xs">Recuerda que es en las afueras de Bogotá</p>
+					</div>
+					<div className="flex flex-col">
 						<p className="font-highlights font-light">Restricciones alimenticias</p>
 						<select className="w-full px-3 h-10 border rounded-md bg-background ">
 							<option>Ninguna</option>

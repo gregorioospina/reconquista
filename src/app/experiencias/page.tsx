@@ -11,7 +11,7 @@ export default function GiftList() {
 			<main className="flex flex-col gap-8 row-start-2 justify-start px-5 md:px-[25svw]">
 				<Header menu color="blue" />
 				<div className="flex flex-col justify-start">
-					<Title lineSrc="./assets/images/line-b.svg" yOffset={-10} title={`Lista de\nRegalos`} />
+					<Title lineSrc="./assets/images/line-b.svg" yOffset={-10} title={`Lista de\nExperiencias`} />
 				</div>
 				<div className="flex flex-col">
 					<p className="font-body uppercase font-semibold text-sm md:text-base mt-2">decidimos hacer algo más simple...</p>

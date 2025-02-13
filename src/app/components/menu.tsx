@@ -39,7 +39,7 @@ const Menu = ({ open, close }: IMenu) => {
 						<Link href={"/bogota"}>Estadía en Bogota</Link>
 					</li>
 					<li>
-						<Link href={"/regalos"}>Lista de Regalos</Link>
+						<Link href={"/experiencias"}>Lista de Experiencias</Link>
 					</li>
 				</ul>
 			</div>

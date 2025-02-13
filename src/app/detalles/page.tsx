@@ -47,8 +47,8 @@ export default function Details() {
 					<p className="font-body font-semibold text-sm md:text-base mt-2">Finca Haras Primavera Sopó</p>
 					<p className="font-body md:text-base md:leading-5 leading-4 text-sm  text-justify">
 						Los invitamos a celebrar nuestro matrimonio a las afueras de Bogotá, en la espectacular Finca Haras Primavera. La ceremonia arranca a las 3pm. Les
-						recordamos que el lugar está ubicado fuera de Bogotá, así que por favor planeen su viaje con anticipación. ¡Estamos emocionados de compartir este
-						día especial con ustedes! Por favor confirmen su asistencia.
+						recordamos que el lugar está ubicado fuera de Bogotá, aproximadamente a hora y media de distancia, así que por favor planeen su viaje con
+						anticipación. ¡Estamos emocionados de compartir este día especial con ustedes! Por favor confirmen su asistencia.
 					</p>
 					<p className="font-body font-semibold text-sm md:text-base mt-1">Vestido Largo y Traje</p>
 				</div>
