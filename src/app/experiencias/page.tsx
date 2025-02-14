@@ -17,8 +17,9 @@ export default function GiftList() {
 					<p className="font-body uppercase font-semibold text-sm md:text-base mt-2">decidimos hacer algo más simple...</p>
 					<p className="font-body my-4 md:text-base md:leading-5 leading-3 text-sm  text-justify">
 						Queremos compartir con ustedes un día lleno de amor y felicidad, y su presencia será el mejor regalo que podamos recibir. Si además quieren
-						ayudarnos a hacer nuestra luna de miel aún más increíble, hemos creado un fondo para este propósito. {"\n"}¡Gracias por ser parte de este momento
-						tan importante para nosotros!
+						ayudarnos a hacer nuestra luna de miel aún más increíble, hemos creado una lista con experiencias que nos gustaría tener en el viaje para darles una
+						idea de regalos que nos harán pensar en ustedes durante los momentos más especiales. {"\n"}¡Gracias por ser parte de este momento tan importante
+						para nosotros!
 					</p>
 				</div>
 

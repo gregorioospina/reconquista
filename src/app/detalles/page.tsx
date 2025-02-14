@@ -19,11 +19,11 @@ export default function Details() {
 				</div>
 
 				<div className="flex flex-col">
-					<p className="uppercase font-body font-light text-xs md:text-sm">Jueves 31 de agosto, 5:30 pm</p>
+					<p className="uppercase font-body font-light text-xs md:text-sm">Jueves 31 de julio, 7:00 pm</p>
 					<p className="font-title text-3xl md:text-4xl">Drinks y Picoteo</p>
 					<p className="font-body font-semibold text-sm md:text-base mt-2">URBAN PLAZA. Calle 90 #11-13 Bogotá.</p>
 					<p className="font-body md:text-base md:leading-5 leading-4 text-sm  text-justify">
-						Quizimos hacer esta fiesta para que tengan la oportunidad de conocerse con toda la gente que irá al matrimonio, y para que puedan reencontrarse con
+						Quizimos hacer este coctel para que tengan la oportunidad de conocerse con toda la gente que irá al matrimonio, y para que puedan reencontrarse con
 						personas increibles que no ven hace años. Será un momento de disfrutar de algo rico para comer, y brindar juntos, llenos de ilusión, por el gran día
 						que se acerca. ¡Nos encantaría que nos acompañen! Por favor, confirmen su asistencia.
 					</p>
@@ -53,7 +53,7 @@ export default function Details() {
 					<p className="font-body font-semibold text-sm md:text-base mt-1">Vestido Largo y Traje</p>
 				</div>
 
-				<div className="mt-1 flex flex-col gap-y-3 items-start">
+				<div className="mt-1 z-10 flex flex-col gap-y-3 items-start">
 					<Link href={"/rsvp"} className="underline font-highlights text-sm md:text-base font-light">
 						Confirmar
 					</Link>
@@ -62,8 +62,8 @@ export default function Details() {
 					</Link>
 				</div>
 
-				<div className="h-[70svh] mt-[-120px] relative w-full ">
-					<Image src={"/assets/images/wed.png"} alt="detalles" fill className="object-contain" />
+				<div className="h-[70svh] z-0 mt-[-120px] relative w-full ">
+					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>
 		</div>

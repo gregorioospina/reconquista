@@ -24,22 +24,34 @@ const Menu = ({ open, close }: IMenu) => {
 				<p className="text-2xl md:text-3xl font-semibold">Menú</p>
 				<ul className="flex items-center flex-col gap-y-2 mt-5 text-lg">
 					<li>
-						<Link href={"/"}>Inicio</Link>
+						<Link className="whitespace-nowrap" href={"/"}>
+							Inicio
+						</Link>
 					</li>
 					<li>
-						<Link href={"/detalles"}>Detalles</Link>
+						<Link className="whitespace-nowrap" href={"/detalles"}>
+							Detalles
+						</Link>
 					</li>
 					<li>
-						<Link href={"/rsvp"}>RSVP</Link>
+						<Link className="whitespace-nowrap" href={"/rsvp"}>
+							RSVP
+						</Link>
 					</li>
 					<li>
-						<Link href={"/colombia"}>Viaja por Colombia</Link>
+						<Link className="whitespace-nowrap" href={"/colombia"}>
+							Viaja por Colombia
+						</Link>
 					</li>
 					<li>
-						<Link href={"/bogota"}>Estadía en Bogota</Link>
+						<Link className="whitespace-nowrap" href={"/bogota"}>
+							Estadía en Bogota
+						</Link>
 					</li>
 					<li>
-						<Link href={"/experiencias"}>Lista de Experiencias</Link>
+						<Link className="whitespace-nowrap" href={"/experiencias"}>
+							Lista de Experiencias
+						</Link>
 					</li>
 				</ul>
 			</div>

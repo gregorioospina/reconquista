@@ -32,10 +32,10 @@ export default function RSVP() {
 						</select>
 					</div>
 					<div className="flex flex-col">
-						<p className="font-highlights font-light">Necesito transporte para el matrimonio</p>
+						<p className="font-highlights font-light">Soy extranjero y necesito transporte para el matrimonio</p>
 						<select className="w-full px-3 h-10 border rounded-md bg-background ">
-							<option>No</option>
-							<option>Si</option>
+							<option>No necesito transporte</option>
+							<option>Si necesito transporte</option>
 						</select>
 						<p className="font-body text-xs">Recuerda que es en las afueras de Bogotá</p>
 					</div>
@@ -46,7 +46,7 @@ export default function RSVP() {
 							<option>Vegetariana</option>
 							<option>Vegana</option>
 							<option>Pesquetariana</option>
-							<option>Alérgico a no tener un guaro en mi mano</option>
+							<option>Alérgico a no tener un trago en mi mano</option>
 						</select>
 					</div>
 					<div className="flex flex-col">
