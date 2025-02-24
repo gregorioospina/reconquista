@@ -24,8 +24,7 @@ export default function GiftList() {
 				</div>
 
 				<div className="mt-1 flex flex-col gap-y-3 items-start">
-					<button className="underline font-highlights font-light">Transferencias desde bancos Colombianos</button>
-					<button className="underline font-highlights font-light">Pagos con tarjeta de crédito</button>
+					<button className="underline font-highlights font-light">Mira las experiencias que puedes regalar!</button>
 				</div>
 
 				<div className="h-[60svh] relative w-full mt-[-90px]">
