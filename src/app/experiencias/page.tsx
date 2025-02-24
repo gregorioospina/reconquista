@@ -23,13 +23,13 @@ export default function GiftList() {
 					</p>
 				</div>
 
-				<div className="mt-1 flex flex-col gap-y-3 items-start">
+				<div className="z-30 mt-1 flex flex-col gap-y-3 items-start">
 					<a href="https://macayalvaro.clynk.me/OeekfZdu/menu" target="__blank" className="underline font-highlights font-light">
 						Mira las experiencias que puedes regalar!
 					</a>
 				</div>
 
-				<div className="h-[60svh] relative w-full mt-[-90px]">
+				<div className="z-10 h-[60svh] relative w-full mt-[-90px]">
 					<Image src={"/assets/images/thai.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>

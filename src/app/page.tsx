@@ -17,7 +17,7 @@ export default function Home() {
 						Álvaro &{"\n"}María Camila
 					</p>
 					<p className="mx-5 relative font-title sm:text-4xl text-lg md:text-xl z-10 whitespace-break-spaces text-foreground">2 de agosto, 2025</p>
-					<div className="flex flex-col gap-y-2 md:gap-y-3 pl-5 mt-5">
+					<div className="z-20 flex flex-col gap-y-2 md:gap-y-3 pl-5 mt-5">
 						<Link className="text-sm md:text-base underline cursor-pointer font-highlights font-light" href={"/detalles"}>
 							Detalles
 						</Link>
@@ -35,7 +35,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="md:h-[80svh] h-[60svh] w-full absolute right-0 bottom-0 md:w-4/5">
+				<div className="z-10 md:h-[80svh] h-[60svh] w-full absolute right-0 bottom-0 md:w-4/5">
 					<Image
 						className="object-cover  md:object-contain object-right-bottom z-[9]"
 						src={isMd ? "/assets/images/wed-extended.png" : "/assets/images/wed-extended-mobile.png"}
