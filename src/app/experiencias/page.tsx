@@ -24,7 +24,9 @@ export default function GiftList() {
 				</div>
 
 				<div className="mt-1 flex flex-col gap-y-3 items-start">
-					<button className="underline font-highlights font-light">Mira las experiencias que puedes regalar!</button>
+					<a href="https://macayalvaro.clynk.me/OeekfZdu/menu" target="__blank" className="underline font-highlights font-light">
+						Mira las experiencias que puedes regalar!
+					</a>
 				</div>
 
 				<div className="h-[60svh] relative w-full mt-[-90px]">
