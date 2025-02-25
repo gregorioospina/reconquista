@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import CTA from "./components/cta";
 import Menu from "./components/menu";
 import { useBreakpoint } from "./hooks/useGPTBreakpoint";
 
@@ -44,6 +45,7 @@ export default function Home() {
 				</div>
 			</main>
 			<Menu open={openMenu} close={() => setOpenMenu(false)} />
+			<CTA />
 		</div>
 	);
 }

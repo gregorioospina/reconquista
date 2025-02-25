@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import CTA from "../components/cta";
 import Header from "../components/header";
 import Title from "../components/title";
 import activities from "./activities.json";
@@ -21,7 +22,33 @@ export default function Bogota() {
 					</p>
 
 					<div className="mt-1 flex flex-col gap-y-3 items-start">
-						<button className="underline font-highlights font-light">Lista de hoteles recomendados</button>
+						<p className="text-lg ">Lista de hoteles recomendados:</p>
+						<ul>
+							<li className="">
+								<a
+									className="font-highlights font-light underline text-blue-700"
+									href="https://www.hilton.com/es/book/reservation/rooms/?ctyhocn=BOGNTDT&arrivalDate=2025-07-31&departureDate=2025-08-03&groupCode=CDTMYA&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink"
+									target="__blank">
+									Double Tree
+								</a>
+							</li>
+							<li className="mt-3">
+								<a
+									className="font-highlights font-light underline text-blue-700"
+									href="https://be.synxis.com/?adult=1&arrive=2025-07-30&chain=10074&child=0&currency=COP&depart=2025-08-04&hotel=25811&level=chain&locale=es-MX&promo=MARIACAMYALVARO&rooms=1"
+									target="__blank">
+									Mercure BH Bogota
+								</a>
+							</li>
+							<li className="mt-3">
+								<a
+									className="font-highlights font-light underline text-blue-700"
+									href="https://be.synxis.com/?adult=1&arrive=2025-07-30&chain=10074&child=0&currency=COP&depart=2025-08-04&hotel=31541&level=chain&locale=es-MX&promo=MARIACAMYALVARO&rooms=1"
+									target="__blank">
+									Hotel EK
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 
@@ -40,10 +67,12 @@ export default function Bogota() {
 								<div className="flex flex-col">
 									<p className="uppercase font-body font-light text-xs md:text-sm">{a.date}</p>
 									<p className="font-title text-xl md:text-2xl">{a.name}</p>
-									<p className="font-body md:text-sm md:leading-4 leading-3 text-sm text-justify">{a.description}</p>
+									<p className="font-body md:text-xs md:leading-3 leading-3 text-sm text-justify">{a.description}</p>
 								</div>
 								<div className="flex justify-start">
-									<button className="underline font-highlights text-sm font-light">quiero reservar</button>
+									<a href={a.link} target="__blank" className="underline font-highlights text-sm font-light">
+										quiero reservar
+									</a>
 								</div>
 							</div>
 						))}
@@ -54,6 +83,7 @@ export default function Bogota() {
 					<Image src={"/assets/images/cart.png"} alt="cart" fill className="object-contain" />
 				</div>
 			</main>
+			<CTA />
 		</div>
 	);
 }

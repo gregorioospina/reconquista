@@ -1,27 +1,15 @@
 {
 	"activities": [
 		{
-			"date": "Jueves 31 de agosto",
-			"name": "Museo del Oro 1 ",
-			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"date": "Viernes 1 de agosto",
+			"name": "Monserrate Tour",
+			"description": "Comienza tu recorrido en teleférico para visitar Monserrate, el icónico mirador de Bogotá. Luego, explora la Quinta de Bolívar, la histórica casa de Simón Bolívar, y sumérgete en la historia de Colombia.",
 			"link": ""
 		},
 		{
-			"date": "Jueves 31 de agosto",
-			"name": "Museo del Oro 2",
-			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
-			"link": ""
-		},
-		{
-			"date": "Jueves 31 de agosto",
-			"name": "Museo del Oro 3",
-			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
-			"link": ""
-		},
-		{
-			"date": "Jueves 31 de agosto",
-			"name": "Museo del Oro 4",
-			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+			"date": "Jueves 31 de julio",
+			"name": "La Candelaria",
+			"description": "Explora los tesoros ocultos de Bogotá en un recorrido por La Candelaria, cuyos lugares emblemáticos te sumergirán en la rica historia de la ciudad y de Colombia.",
 			"link": ""
 		}
 	]

@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import CTA from "../components/cta";
 import Header from "../components/header";
 import Title from "../components/title";
 
@@ -58,6 +59,7 @@ export default function RSVP() {
 					<button className="bg-foreground px-4 py-4 w-fit rounded-md text-background font-highlights">Confirmar asistencia</button>
 				</div>
 			</main>
+			<CTA />
 		</div>
 	);
 }

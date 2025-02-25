@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import CTA from "../components/cta";
 import Header from "../components/header";
 import Title from "../components/title";
 
@@ -66,6 +67,7 @@ export default function Details() {
 					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>
+			<CTA />
 		</div>
 	);
 }
