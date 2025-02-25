@@ -24,7 +24,7 @@ export default function Details() {
 					<p className="font-title text-3xl md:text-4xl">Drinks y Picoteo</p>
 					<p className="font-body font-semibold text-sm md:text-base mt-2">URBAN PLAZA. Calle 90 #11-13 Bogotá.</p>
 					<p className="font-body md:text-base md:leading-5 leading-4 text-sm  text-justify">
-						Quizimos hacer este coctel para que tengan la oportunidad de conocerse con toda la gente que irá al matrimonio, y para que puedan reencontrarse con
+						Quisimos hacer este coctel para que tengan la oportunidad de conocerse con toda la gente que irá al matrimonio, y para que puedan reencontrarse con
 						personas increibles que no ven hace años. Será un momento de disfrutar de algo rico para comer, y brindar juntos, llenos de ilusión, por el gran día
 						que se acerca. ¡Nos encantaría que nos acompañen! Por favor, confirmen su asistencia.
 					</p>
