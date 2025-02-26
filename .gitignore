@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+google-api-credentials.json
 /.pnp
 .pnp.*
 .yarn/*

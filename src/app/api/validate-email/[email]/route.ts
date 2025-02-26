@@ -1,0 +1,33 @@
+import { GoogleAuth } from "google-auth-library";
+import { google } from "googleapis";
+import { NextResponse } from "next/server"; // Import NextResponse
+
+export async function GET(req: Request, { params }: { params: { email: string } }) {
+	// Change handler to GET
+	try {
+		const auth = new GoogleAuth({
+			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+			keyFile: "google-api-credentials.json",
+		});
+		const sheets = google.sheets({ version: "v4", auth });
+		const p = await params;
+
+		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
+		const range = "RSVP!B2:B1000";
+
+		const response = await sheets.spreadsheets.values.get({
+			spreadsheetId,
+			range,
+		});
+
+		if (response.data.values) {
+			const flat = response.data.values.flat();
+			const found = flat.find((e) => e === p.email);
+
+			return NextResponse.json({ duplicateEmail: !!found }, { status: 200 }); // Use NextResponse
+		} else return NextResponse.json({ error: true }, { status: 400 }); // Use NextResponse
+	} catch (error) {
+		console.error("Error accessing Google Sheets:", error);
+		return NextResponse.json({ error: "Internal Server Error" }, { status: 500 }); // Use NextResponse
+	}
+}
