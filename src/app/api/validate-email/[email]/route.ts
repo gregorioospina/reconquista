@@ -1,9 +1,9 @@
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
-import { NextResponse } from "next/server"; // Import NextResponse
+import { NextRequest, NextResponse } from "next/server"; // Import NextResponse
 
-export async function GET(req: Request, { params }: { params: { email: string } }) {
-	// Change handler to GET
+// @ts-expect-error el any me la chupa
+export async function GET(req: NextRequest, { params }: unknown) {
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
