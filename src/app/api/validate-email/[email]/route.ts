@@ -1,7 +1,7 @@
+import fs from "fs";
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
 import { NextRequest, NextResponse } from "next/server"; // Import NextResponse
-
 // @ts-expect-error el any me la chupa
 export async function GET(req: NextRequest, { params }: unknown) {
 	try {
@@ -11,6 +11,9 @@ export async function GET(req: NextRequest, { params }: unknown) {
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const p = await params;
+
+		const f = fs.existsSync("./google-api-credentials.json");
+		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
 		const range = "RSVP!B2:B1000";

@@ -1,4 +1,5 @@
 import { RSVPBody } from "@/app/rsvp/page";
+import fs from "fs";
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
 import { NextResponse } from "next/server"; // Import NextResponse
@@ -12,6 +13,9 @@ export async function POST(req: Request) {
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const body: RSVPBody = await req.json();
+
+		const f = fs.existsSync("./google-api-credentials.json");
+		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
 		const range = "RSVP!A2:G1000";
