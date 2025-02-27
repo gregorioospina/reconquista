@@ -16,6 +16,6 @@ const credentials = {
 	universe_domain: "googleapis.com",
 };
 
-console.log("running prebuild");
+console.log("running prebuild", credentials);
 
 fs.writeFileSync("public/google-api-credentials.json", JSON.stringify(credentials, null, 2));
