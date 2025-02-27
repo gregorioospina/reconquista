@@ -9,12 +9,12 @@ export async function POST(req: Request) {
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-			keyFile: process.cwd() + "public/google-api-credentials.json",
+			keyFile: process.cwd() + "/public/google-api-credentials.json",
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const body: RSVPBody = await req.json();
 
-		const f = fs.existsSync(process.cwd() + "public/google-api-credentials.json");
+		const f = fs.existsSync(process.cwd() + "/public/google-api-credentials.json");
 		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
