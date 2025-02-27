@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-			keyFile: "google-api-credentials.json",
+			keyFile: "./google-api-credentials.json",
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const body: RSVPBody = await req.json();

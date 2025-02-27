@@ -7,7 +7,7 @@ export async function GET(req: NextRequest, { params }: unknown) {
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-			keyFile: "google-api-credentials.json",
+			keyFile: "./google-api-credentials.json",
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const p = await params;
