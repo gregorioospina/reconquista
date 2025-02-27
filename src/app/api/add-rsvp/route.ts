@@ -3,18 +3,19 @@ import fs from "fs";
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
 import { NextResponse } from "next/server"; // Import NextResponse
+import { CREDENTIALS_PATH } from "../validate-email/[email]/route";
 
 export async function POST(req: Request) {
 	// Change handler to GET
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-			keyFile: "./google-api-credentials.json",
+			keyFile: CREDENTIALS_PATH,
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const body: RSVPBody = await req.json();
 
-		const f = fs.existsSync("./google-api-credentials.json");
+		const f = fs.existsSync(CREDENTIALS_PATH);
 		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";

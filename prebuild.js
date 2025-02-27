@@ -18,4 +18,4 @@ const credentials = {
 
 console.log("running prebuild");
 
-fs.writeFileSync("./google-api-credentials.json", JSON.stringify(credentials, null, 2));
+fs.writeFileSync("public/google-api-credentials.json", JSON.stringify(credentials, null, 2));

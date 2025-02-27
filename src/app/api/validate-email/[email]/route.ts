@@ -2,17 +2,20 @@ import fs from "fs";
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
 import { NextRequest, NextResponse } from "next/server"; // Import NextResponse
+
+export const CREDENTIALS_PATH = "public/google-api-credentials.json";
+
 // @ts-expect-error el any me la chupa
 export async function GET(req: NextRequest, { params }: unknown) {
 	try {
 		const auth = new GoogleAuth({
 			scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-			keyFile: "./google-api-credentials.json",
+			keyFile: CREDENTIALS_PATH,
 		});
 		const sheets = google.sheets({ version: "v4", auth });
 		const p = await params;
 
-		const f = fs.existsSync("./google-api-credentials.json");
+		const f = fs.existsSync(CREDENTIALS_PATH);
 		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
