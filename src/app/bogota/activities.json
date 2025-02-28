@@ -4,19 +4,22 @@
 			"date": "Jueves 31 de julio",
 			"name": "Monserrate",
 			"description": "Sube las escaleras hasta el Santuario de Monserrate (3.150 m), disfruta de la vista panorámica, explora la iglesia y el mercado local. Finaliza con un desayuno típico y desciende en teleférico o funicular.",
-			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020"
+			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020",
+			"price": "€45"
 		},
 		{
 			"date": "Jueves 31 de julio",
 			"name": "Cerveza y tejo",
 			"description": "Vive la tradición colombiana del tejo acompañado de cerveza local. Un juego de precisión y explosiones de pólvora en un ambiente divertido.",
-			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020"
+			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020",
+			"price": "€35"
 		},
 		{
 			"date": "Viernes 1 de agosto",
 			"name": "La Candelaria",
 			"description": "Descubre la historia y cultura de Bogotá recorriendo sus calles coloniales, leyendas precolombinas y sitios emblemáticos. Incluye un refrigerio tradicional.",
-			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020"
+			"link": "https://www.wetravel.com/trips/tours-en-bogota-boda-de-maca-alvaro-vaova-sas-00795020",
+			"price": "€40"
 		}
 	]
 }

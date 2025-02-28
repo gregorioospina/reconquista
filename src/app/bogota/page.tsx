@@ -22,7 +22,10 @@ export default function Bogota() {
 					</p>
 
 					<div className="mt-1 flex flex-col gap-y-3 items-start">
-						<p className="text-lg ">Lista de hoteles recomendados:</p>
+						<div className="flex flex-col">
+							<p className="text-lg ">Lista de hoteles recomendados</p>
+							<p className="text-sm font-light font-highlights">Para obtener precios especiales, haz clic en los nombres de los hoteles</p>
+						</div>
 						<ul>
 							<li className="">
 								<a
@@ -50,6 +53,39 @@ export default function Bogota() {
 							</li>
 						</ul>
 					</div>
+					<div className="mt-4 flex flex-col gap-y-3 items-start">
+						<div className="flex flex-col">
+							<p className="text-lg ">Nuestros restaurantes favoritos en Bogotá</p>
+							<p className="text-sm font-light font-highlights">Estos son los restaurantes que más nos gustan en la ciudad. ¡Ojala puedan ir a alguno!</p>
+						</div>
+						<ul>
+							<li className="">
+								<a className="font-highlights font-light underline text-blue-700" href="https://humonegrobog.com/" target="__blank">
+									Humo Negro (colombia Fusion - o lugar nao é muito bonito mas a comida e boa)
+								</a>
+							</li>
+							<li className="mt-3">
+								<a className="font-highlights font-light underline text-blue-700" href="https://pajaressalinas.com/" target="__blank">
+									Pajares Salinas (español)
+								</a>
+							</li>
+							<li className="mt-3">
+								<a className="font-highlights font-light underline text-blue-700" href="https://www.restaurantemesafranca.com/" target="__blank">
+									Mesa Franca (Colombia Fusion)
+								</a>
+							</li>
+							<li className="mt-3">
+								<a className="font-highlights font-light underline text-blue-700" href="https://osakanikkei.com/es/bogota-es/" target="__blank">
+									Osaka (peruano japones)
+								</a>
+							</li>
+							<li className="mt-3">
+								<a className="font-highlights font-light underline text-blue-700" href="https://mini-mal.org/" target="__blank">
+									Minmal
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div className="w-full h-8 relative my-4">
@@ -68,10 +104,11 @@ export default function Bogota() {
 									<p className="uppercase font-body font-light text-xs md:text-sm">{a.date}</p>
 									<p className="font-title text-xl md:text-2xl">{a.name}</p>
 									<p className="font-body md:text-xs md:leading-3 leading-3 text-sm text-justify">{a.description}</p>
+									<p className="semi-bold mt-3 md:leading-3 leading-3 text-base mb-2 text-justify">{a.price}</p>
 								</div>
 								<div className="flex justify-start">
 									<a href={a.link} target="__blank" className="underline font-highlights text-sm font-light">
-										quiero reservar
+										Quiero reservar
 									</a>
 								</div>
 							</div>
