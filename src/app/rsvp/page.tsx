@@ -12,6 +12,7 @@ export type RSVPBody = {
 	name: string;
 	drinksrsvp: string;
 	email: string;
+	single: string;
 	weddingrsvp: string;
 	transport: string;
 	foodrestrictions: string;
@@ -57,6 +58,7 @@ export default function RSVP() {
 	const handleSend = () => {
 		const name = (document.getElementById("name-input") as HTMLInputElement)?.value;
 		const email = (document.getElementById("email-input") as HTMLInputElement)?.value;
+		const single = (document.getElementById("single-rsvp-select") as HTMLSelectElement)?.value;
 		const drinksrsvp = (document.getElementById("drinks-rsvp-select") as HTMLSelectElement)?.value;
 		const weddingrsvp = (document.getElementById("wedding-rsvp-select") as HTMLSelectElement)?.value;
 		const transport = (document.getElementById("transport-select") as HTMLSelectElement)?.value;
@@ -80,6 +82,7 @@ export default function RSVP() {
 			drinksrsvp,
 			email,
 			weddingrsvp,
+			single,
 			transport,
 			foodrestrictions,
 			songrequest,
@@ -162,6 +165,13 @@ export default function RSVP() {
 							Cancion que <span className="font-bold">necesitas</span> escuchar
 						</p>
 						<input id="song-request-input" className="w-full px-3  h-10 border rounded-md bg-background " />
+					</div>
+					<div className="flex flex-col">
+						<p className="font-highlights font-light">¿Estás soltera/soltero?</p>
+						<select id="single-rsvp-select" className="w-full px-3 h-10 border rounded-md bg-background ">
+							<option>Si</option>
+							<option>No</option>
+						</select>
 					</div>
 					<button
 						disabled={hasError}

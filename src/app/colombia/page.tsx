@@ -16,8 +16,8 @@ export default function Colombia() {
 				</div>
 				<div className="px-5 md:px-0 flex flex-col">
 					<p className="font-body my-4 xs:mt-1 md:text-base leading-4 md:leading-5 text-sm  text-justify">
-						Hemos curado, junto con Vaova Travel, un paquete de viaje para que nuestros amigos que nos visiten desde otros paises puedan aprovechar para conocer
-						más de nuestro hermoso país. Los invitamos a ir en unos de estos viajes para que entiendan un poco mejor el amor que sentimos por nuestra Colombia.
+						Hemos organizado, junto con Vaova Travel, algunos viajes para que quienes nos visiten desde otros países puedan aprovechar y conocer más de nuestro
+						país.
 					</p>
 				</div>
 
@@ -40,12 +40,12 @@ export default function Colombia() {
 							href="https://www.wetravel.com/trips/viaje-amigos-post-boda-maca-alvaro-vaova-sas-80974766"
 							target="__blank"
 							className="underline font-highlights text-sm mb-3 text-foreground font-light">
-							Más info e inscripciones
+							¡Haz clic aquí para recibir más info o inscribirte!
 						</a>
 					</div>
 				</div>
 				<div className="bg-foreground text-background px-5 py-10 md:px-10 md:py-16 md:pt-8 md:rounded-3xl">
-					<p className="uppercase font-body text-base font-bold md:text-lg whitespace-nowrap mb-8">¡Esto es únicamente para el grupo de Carmina!</p>
+					<p className="uppercase font-body text-base font-bold md:text-lg whitespace-nowrap mb-8">Este paquete es para tí solo si eres del grupo de Carmina</p>
 					<div className="grid grid-cols-2 gap-x-3 md:gap-x-1 h-[200px] md:h-[250px]">
 						<div className="flex flex-col justify-between">
 							<p className="uppercase font-body font-light text-sm md:text-base whitespace-nowrap">6 - 11 de agosto</p>
@@ -66,7 +66,7 @@ export default function Colombia() {
 							href="https://www.wetravel.com/trips/viaje-post-boda-maca-alvaro-vaova-sas-65136713"
 							target="__blank"
 							className="underline font-highlights text-sm mb-3 text-background font-light">
-							Más info e inscripciones
+							¡Haz clic aquí para recibir más info o inscribirte!
 						</a>
 					</div>
 				</div>

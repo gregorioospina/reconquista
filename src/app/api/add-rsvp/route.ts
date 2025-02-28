@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 		console.log({ f });
 
 		const spreadsheetId = "1KHjUanF8YaNgRGa5oryoeW2C_8_mbINbnOSCBmEVG-g";
-		const range = "RSVP!A2:G1000";
+		const range = "RSVP!A2:H1000";
 
 		const response = await sheets.spreadsheets.values.get({
 			spreadsheetId,
@@ -28,8 +28,10 @@ export async function POST(req: Request) {
 		if (response.data.values) {
 			const inputRow = response.data.values.length + 2;
 
-			const rangeToInput = `RSVP!A${inputRow}:G${inputRow}`;
-			const resource = { values: [[body.name, body.email, body.drinksrsvp, body.weddingrsvp, body.transport, body.foodrestrictions, body.songrequest]] };
+			const rangeToInput = `RSVP!A${inputRow}:H${inputRow}`;
+			const resource = {
+				values: [[body.name, body.email, body.drinksrsvp, body.weddingrsvp, body.transport, body.foodrestrictions, body.songrequest, body.single]],
+			};
 
 			const result = await sheets.spreadsheets.values.update({
 				spreadsheetId,
