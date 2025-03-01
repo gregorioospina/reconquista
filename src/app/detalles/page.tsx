@@ -38,8 +38,12 @@ export default function Details() {
 						¿Cómo llegar?
 					</Link>
 				</div>
-				<div className="w-full h-8 relative my-4">
+				{/* <div className="w-full h-8 relative my-4">
 					<Image src={"/assets/images/divider-3.svg"} fill alt="divider 1 " />
+				</div> */}
+
+				<div className="h-[70svh] z-0 mt-[-120px] relative w-full ">
+					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
 				</div>
 
 				<div className="flex flex-col z-10">
@@ -61,10 +65,6 @@ export default function Details() {
 					<Link target="__blank" href={"https://maps.app.goo.gl/zY5o6rhzao82kfDG6"} className="underline font-highlights text-sm md:text-base font-light">
 						¿Cómo llegar?
 					</Link>
-				</div>
-
-				<div className="h-[70svh] z-0 mt-[-120px] relative w-full ">
-					<Image src={"/assets/images/carrito.png"} alt="detalles" fill className="object-contain" />
 				</div>
 			</main>
 			<CTA />
