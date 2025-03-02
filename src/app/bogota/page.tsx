@@ -56,33 +56,38 @@ export default function Bogota() {
 					<div className="mt-4 flex flex-col gap-y-3 items-start">
 						<div className="flex flex-col">
 							<p className="text-lg ">Nuestros restaurantes favoritos en Bogotá</p>
-							<p className="text-sm font-light font-highlights">Estos son los restaurantes que más nos gustan en la ciudad. ¡Ojala puedan ir a alguno!</p>
+							<p className="text-sm font-light font-highlights">Estos son los restaurantes que más nos gustan en la ciudad.</p>
 						</div>
 						<ul>
 							<li className="">
 								<a className="font-highlights font-light underline text-blue-700" href="https://humonegrobog.com/" target="__blank">
-									Humo Negro (colombia Fusion - o lugar nao é muito bonito mas a comida e boa)
+									Humo Negro
 								</a>
+								<p className="text-xs">Colombia Fusion - o lugar nao é muito bonito mas a comida e boa</p>
 							</li>
 							<li className="mt-3">
-								<a className="font-highlights font-light underline text-blue-700" href="https://pajaressalinas.com/" target="__blank">
-									Pajares Salinas (español)
+								<a className="font-highlights font-light underline text-blue-700" href="https://www.instagram.com/madrebgta/?hl=en" target="__blank">
+									Madre
 								</a>
+								<p className="text-xs">Pizzeria</p>
 							</li>
 							<li className="mt-3">
 								<a className="font-highlights font-light underline text-blue-700" href="https://www.restaurantemesafranca.com/" target="__blank">
-									Mesa Franca (Colombia Fusion)
+									Mesa Franca
 								</a>
+								<p className="text-xs">Colombia Fusion</p>
 							</li>
 							<li className="mt-3">
-								<a className="font-highlights font-light underline text-blue-700" href="https://osakanikkei.com/es/bogota-es/" target="__blank">
-									Osaka (peruano japones)
+								<a className="font-highlights font-light underline text-blue-700" href="https://www.prudencia.net/" target="__blank">
+									Prudencia
 								</a>
+								<p className="text-xs">Comida de autor</p>
 							</li>
 							<li className="mt-3">
-								<a className="font-highlights font-light underline text-blue-700" href="https://mini-mal.org/" target="__blank">
-									Minmal
+								<a className="font-highlights font-light underline text-blue-700" href="https://www.restauranterio.co/" target="__blank">
+									Rio
 								</a>
+								<p className="text-xs">Comida de autor</p>
 							</li>
 						</ul>
 					</div>
