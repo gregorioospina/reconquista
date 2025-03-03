@@ -63,7 +63,7 @@ export default function Bogota() {
 								<a className="font-highlights font-light underline text-blue-700" href="https://humonegrobog.com/" target="__blank">
 									Humo Negro
 								</a>
-								<p className="text-xs">Colombia Fusion - o lugar nao é muito bonito mas a comida e boa</p>
+								<p className="text-xs">Colombia Fusion</p>
 							</li>
 							<li className="mt-3">
 								<a className="font-highlights font-light underline text-blue-700" href="https://www.instagram.com/madrebgta/?hl=en" target="__blank">
