@@ -1,14 +1,29 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AltitudeWarning from "./components/altitude-warning";
 import CTA from "./components/cta";
 import Menu from "./components/menu";
 import { useBreakpoint } from "./hooks/useGPTBreakpoint";
 
 export default function Home() {
 	const { isMd } = useBreakpoint();
+
 	const [openMenu, setOpenMenu] = useState<boolean>(false);
+	const [openAltitudeWarning, setOpenAltitudeWarning] = useState<boolean>(false);
+
+	useEffect(() => {
+		const d = localStorage.getItem("ALTITUDE_WARNING");
+		if (!d) {
+			setOpenAltitudeWarning(true);
+		}
+	}, []);
+
+	const handleCloseAltitude = () => {
+		localStorage.setItem("ALTITUDE_WARNING", "true");
+		setOpenAltitudeWarning(false);
+	};
 
 	return (
 		<div id="scrolling-container" className="items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
@@ -44,6 +59,7 @@ export default function Home() {
 						alt="cover"></Image>
 				</div>
 			</main>
+			<AltitudeWarning open={openAltitudeWarning} onClose={handleCloseAltitude} />
 			<Menu open={openMenu} close={() => setOpenMenu(false)} />
 			<CTA />
 		</div>

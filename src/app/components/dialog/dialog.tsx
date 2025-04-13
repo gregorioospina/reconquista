@@ -40,7 +40,7 @@ export const Dialog = (props: PropsDialog) => {
 			onClick={onClose}>
 			<div
 				id={props.containerId}
-				className={`${containerClassName} min-h-30% max-h-90% duration-1200 relative z-30 w-[95%] max-w-[480px] grid-cols-1 grid-rows-[15%_85%] rounded-xl bg-white p-4 transition-[max-height] md:max-h-95% md:w-1/3 md:min-w-[480px] md:p-6`}
+				className={`${containerClassName} min-h-30% max-h-90% duration-1200 relative z-30 w-[95%] max-w-[500px] grid-cols-1 grid-rows-[15%_85%] rounded-xl bg-white p-4 transition-[max-height] md:max-h-95% md:w-1/3 md:min-w-[500px] md:p-6`}
 				onClick={(e) => e.stopPropagation()}>
 				{(title || subtitle) && (
 					<div className={`mb-4 mt-0 flex flex-col pb-3 ${!noDivider && "border-b-[1px] border-b-stone-700/20"}`}>
