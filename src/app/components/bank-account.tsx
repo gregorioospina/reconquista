@@ -42,6 +42,11 @@ const BankAccount = ({ open, onClose }: IBankAccount) => {
 							</tr>
 						</tbody>
 					</table>
+					<div className="flex justify-center">
+						<button onClick={onClose} className="mt-3 rounded-md bg-rc-blue text-white p-2 font-highlights">
+							Cerrar
+						</button>
+					</div>
 				</div>
 			</div>
 		</Dialog>

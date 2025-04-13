@@ -40,7 +40,7 @@ export default function GiftList() {
 					<button onClick={() => setOpenBankAccount(true)} className="bg-rc-red p-3 py-2 rounded-md hover:underline text-background font-highlights font-light">
 						Información de cuenta bancaria
 					</button>
-					<p className="text-xs font-light">¡Mira las experiencias que puedes regalar!</p>
+					<p className="text-xs font-light">Cuenta bancaria para pagos desde Europa</p>
 				</div>
 
 				<div className="z-10 h-[60svh] relative w-full mt-[-30px]">
