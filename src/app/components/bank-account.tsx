@@ -30,6 +30,12 @@ const BankAccount = ({ open, onClose }: IBankAccount) => {
 							</tr>
 							<tr className="border-b">
 								<td className="border-l pl-2 py-2 flex flex-col">
+									<p className="text-[11px] sm:text-sm font-semibold text-gray-900">Código BIC/SWIFT</p>
+									<p className="text-sm sm:text-base text-gray-600">TCCLGB2L</p>
+								</td>
+							</tr>
+							<tr className="border-b">
+								<td className="border-l pl-2 py-2 flex flex-col">
 									<p className="text-[11px] sm:text-sm font-semibold text-gray-900">Bank Name:</p>
 									<p className="text-sm sm:text-base text-gray-600">The Currency Cloud Limited</p>
 								</td>

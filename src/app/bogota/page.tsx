@@ -1,11 +1,30 @@
 "use client";
+import { hasCookie, setCookie } from "cookies-next";
+import { add } from "date-fns";
 import Image from "next/image";
+import { useCallback, useEffect, useState } from "react";
+import AltitudeWarning from "../components/altitude-warning";
 import CTA from "../components/cta";
 import Header from "../components/header";
 import Title from "../components/title";
 import activities from "./activities.json";
 
 export default function Bogota() {
+	const [openAltitudeWarning, setOpenAltitudeWarning] = useState<boolean>(false);
+
+	useEffect(() => {
+		if (!hasCookie("ALTITUDE_COOKIE")) {
+			setOpenAltitudeWarning(true);
+		}
+	}, []);
+
+	const handleCloseModal = useCallback(() => {
+		setOpenAltitudeWarning(false);
+		setCookie("ALTITUDE_COOKIE", "true", {
+			expires: add(new Date(), { minutes: 30 }),
+		});
+	}, []);
+
 	return (
 		<div
 			id="scrolling-container"
@@ -126,6 +145,7 @@ export default function Bogota() {
 				</div>
 			</main>
 			<CTA />
+			<AltitudeWarning open={openAltitudeWarning} onClose={handleCloseModal} />
 		</div>
 	);
 }

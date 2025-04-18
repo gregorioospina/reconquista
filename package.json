@@ -10,6 +10,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"cookies-next": "^5.1.0",
+		"date-fns": "^4.1.0",
 		"dotenv": "^16.4.7",
 		"google-auth-library": "^9.15.1",
 		"googleapis": "^144.0.0",
