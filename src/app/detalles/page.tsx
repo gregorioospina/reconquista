@@ -47,13 +47,13 @@ export default function Details() {
 				</div>
 
 				<div className="flex flex-col z-10">
-					<p className="uppercase font-body font-light text-xs md:text-sm">Sábado 2 de agosto, 3 pm</p>
+					<p className="uppercase font-body font-light text-xs md:text-sm">Sábado 2 de agosto, 3:30 pm</p>
 					<p className="font-title text-3xl md:text-4xl">Ceremonia y Celebración</p>
-					<p className="font-body font-semibold text-sm md:text-base mt-2">Finca Haras Primavera Sopó</p>
+					<p className="font-body font-semibold text-sm md:text-base mt-2">Iglesia de Sopó y Finca Haras Primavera, Sopó</p>
 					<p className="font-body md:text-base md:leading-5 leading-4 text-sm  text-justify">
-						Los invitamos a celebrar nuestro matrimonio a las afueras de Bogotá, en la espectacular Finca Haras Primavera. La ceremonia arranca a las 3pm. Les
-						recordamos que el lugar está ubicado fuera de Bogotá, aproximadamente a hora y media de distancia, así que por favor planeen su viaje con
-						anticipación. ¡Estamos emocionados de compartir este día especial con ustedes! Por favor confirmen su asistencia.
+						Los invitamos a celebrar nuestro matrimonio a las afueras de Bogotá. La ceremonia arranca a las 3:30pm en la iglesia de Sopó. Después de la misa,
+						saldremos a la finca Haras Primavera. Les recordamos que el lugar está ubicado fuera de Bogotá, aproximadamente a hora y media de distancia, así que
+						por favor planeen su viaje con anticipación. ¡Estamos emocionados de compartir este día especial con ustedes! Por favor confirmen su asistencia.
 					</p>
 					<p className="font-body font-semibold text-sm md:text-base mt-1">Vestido Largo y Traje</p>
 				</div>
